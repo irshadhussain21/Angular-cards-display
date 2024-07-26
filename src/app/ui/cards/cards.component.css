@@ -2,6 +2,7 @@
     height: 600px;
     width:300px;
     padding: 8px;
+    align-items: center;
     margin:8px 8px 8px 8px;
     background-color: azure;
     color: #000000;
@@ -9,4 +10,8 @@
    
   .card-title{
     font-size: 24px;
+  }
+
+  .btn{
+    background-color: rgb(50, 154, 224);
   }
