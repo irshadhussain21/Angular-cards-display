@@ -1,0 +1,13 @@
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 10px;
+    background-color: aliceblue;
+
+}
+
+ul>li:hover{
+    color: red;
+
+}

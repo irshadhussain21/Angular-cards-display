@@ -55,5 +55,8 @@ export class CardlistComponent {
     }
   }
  
+  handleEvent(event:string){
+    alert(event+ " clicked")
+  }
   
 }

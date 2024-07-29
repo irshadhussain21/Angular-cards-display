@@ -1,0 +1,12 @@
+.card-img{
+    width: 25%;
+    height: 25%;
+}
+.prod-details{
+    display: flex;
+}
+
+.card-text{
+    padding: 30px;
+    font-size: large;
+}

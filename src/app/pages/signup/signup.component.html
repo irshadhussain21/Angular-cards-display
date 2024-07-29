@@ -1,0 +1,47 @@
+<div class="custom-form-container">
+    <div >
+      <!-- form -->
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+       formControlName="email">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div *ngIf="loginForm.get('email')?.invalid && loginForm.get">
+        <div *ngIf="loginForm.get('email')?.errors?.['required']">Email is required</div>
+        <div *ngIf="loginForm.get('email')?.errors?.['email']">Email is required</div>
+       
+      </div>
+     <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1"
+       formControlName="password"
+       
+        >
+      </div>
+      <div *ngIf="password?.touched">
+        <div>
+          <i [ngClass]="{'fa-solid fa-check text-success': hasUpperCase(), 'fa fa-times text-danger': !hasUpperCase()}"></i>
+          <span [ngClass]="{'text-success': hasUpperCase(), 'text-danger': !hasUpperCase()}">At least one uppercase letter</span>
+        </div>
+        <div>
+          <i [ngClass]="{'fa-solid fa-check text-success': hasNumber(), 'fa fa-times text-danger': !hasNumber()}"></i>
+          <span [ngClass]="{'text-success': hasNumber(), 'text-danger': !hasNumber()}">At least one number</span>
+        </div>
+        <div>
+          <i [ngClass]="{'fa-solid fa-check text-success': hasSpecialChar(), 'fa fa-times text-danger': !hasSpecialChar()}"></i>
+          <span [ngClass]="{'text-success': hasSpecialChar(), 'text-danger': !hasSpecialChar()}">At least one special character</span>
+        </div>
+        <div>
+          <i [ngClass]="{'fa-solid fa-check text-success': hasNoSpaces(), 'fa fa-times text-danger': !hasNoSpaces()}"></i>
+          <span [ngClass]="{'text-success': hasNoSpaces(), 'text-danger': !hasNoSpaces()}">No spaces</span>
+        </div>
+        <div>
+          <i [ngClass]="{'fa-solid fa-check text-success': password?.valid, 'fa fa-times text-danger': password?.invalid}"></i>
+          <span [ngClass]="{'text-success': password?.valid, 'text-danger': password?.invalid}">Length between 8 and 20 characters</span>
+        </div>
+      </div>
+      <button  [disabled]="loginForm.invalid" type="submit" class="btn btn-primary">Login</button>
+    </form></div>
+</div>

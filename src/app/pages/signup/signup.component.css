@@ -1,0 +1,69 @@
+.custom-form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+ 
+.custom-form-container .form-label {
+    font-weight: bold;
+    color: #333;
+}
+ 
+.custom-form-container .form-control {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+ 
+.custom-form-container .form-text {
+    font-size: 0.875em;
+    color: #666;
+}
+ 
+.custom-form-container .form-check-label {
+    color: #333;
+}
+ 
+.custom-form-container .btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+}
+ 
+.custom-form-container .btn-primary:hover {
+    background-color: #0056b3;
+}
+.text-success {
+    color: green;
+  }
+ 
+  .text-danger {
+    color: red;
+  }
+ 
+  .fa-check {
+    color: green;
+  }
+ 
+  .fa-times {
+    color: red;
+  }
+.text-success {
+  color: green;
+}
+ 
+.text-danger {
+  color: red;
+}
+ 
+.fa-check {
+  color: green;
+}
+ 
+.fa-times {
+  color: red;
+}
+ 

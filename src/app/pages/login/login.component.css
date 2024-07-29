@@ -1,0 +1,15 @@
+.parent{
+    width: 30%;
+    background-color: azure;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+
+}

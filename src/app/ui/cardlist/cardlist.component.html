@@ -4,7 +4,7 @@
         <div class="carousel">
             @for (item of category.products; track item.id) {
                 <div class="col">
-                    <app-cards [product]="item"></app-cards>
+                    <app-cards [product]="item" (myEvent)=handleEvent($event)></app-cards>
    
             </div>
                 }
